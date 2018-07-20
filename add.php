@@ -58,6 +58,11 @@ $up=0;
 				header("Location: http://localhost/www/form.php?Message=Zmieniono dane użytkownika o id=".$_SESSION['idChange']."");
 				unset($_SESSION['idChange']);
 				exit;
+				}else{
+				header("Location: http://localhost/www/form.php?Message=Dane użytkownika o id=".$_SESSION['idChange']." nie zostały zmienione");
+				unset($_SESSION['idChange']);
+				exit;
+				
 				}
 
 };
